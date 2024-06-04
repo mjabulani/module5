@@ -93,17 +93,16 @@ public class Directory {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             text = bufferedReader.readLine();
-            textBuilder.append(bufferedReader.readLine());
             bufferedReader.close();
-            String textBeforeInvering = textBuilder.toString();
-            for (String word : textBeforeInvering.split(" ")) {
+            for (String word : text.split(" ")) {
                 stringListBeforeInverting.add(word);
             }
-            for (int i = stringListBeforeInverting.size(); i >= 0; i--) {
-                invertedTextBuilder.append(stringListAfterInverting);
+            System.out.println(stringListBeforeInverting);
 
+            for (int i = stringListBeforeInverting.size()-1; i >= 0; i--) {
+                invertedTextBuilder.append(stringListBeforeInverting.get(i) + " ");
             }
-            System.out.println(invertedTextBuilder.toString());
+            System.out.println(invertedTextBuilder);
             return true;
 
 
