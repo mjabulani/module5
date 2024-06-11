@@ -22,5 +22,4 @@ public class Rectangle implements GeometricFigure {
     public double getB() {
         return b;
     }
-
 }

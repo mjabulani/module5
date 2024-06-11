@@ -2,14 +2,14 @@ package org.example.figures;
 
 public class Square extends Rectangle {
 
-    private int a;
 
-    public Square(int a) {
+
+    public Square(double a) {
         super(a, a);
-        this.a = a;
     }
 
     public double calculateDiameter() {
-        return a * Math.sqrt(2);
+        return super.getA() * Math.sqrt(2);
+
     }
 }
