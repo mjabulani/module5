@@ -9,7 +9,10 @@ public class Square extends Rectangle {
     }
 
     public double calculateDiameter() {
-        return super.getA() * Math.sqrt(2);
-
+        if (getA() > 0) {
+            return super.getA() * Math.sqrt(2);
+        } else {
+            return 0;
+        }
     }
 }
