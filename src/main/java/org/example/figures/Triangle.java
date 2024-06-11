@@ -9,9 +9,13 @@ public class Triangle implements GeometricFigure {
         this.height = height;
         this.base = base;
     }
+
     @Override
     public double calculateArea() {
-        return (height * base) / 2;
+        if (height > 0 && base > 0) {
+            return (height * base) / 2;
+        }
+        return 0;
     }
 
     public double getHeight() {

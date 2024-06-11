@@ -50,9 +50,13 @@ public class Main {
 
         String text = d.readFromFile("src/main/resources/wierszyk.txt");
         System.out.println(text);
+//
+//        File f3 = new File("src/main/resources/wierszyk.txt");
+//        d.invertFile(f3);
 
-        File f3 = new File("src/main/resources/wierszyk.txt");
-        d.invertFile(f3);
+        Triangle t = new Triangle(-3, 2);
+        System.out.println(t.calculateArea());
+
     }
 
 
